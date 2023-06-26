@@ -1,6 +1,10 @@
-const theme = {
+import { DefaultTheme } from 'styled-components';
+// Agora devo tipar meu tema
+
+
+const theme: DefaultTheme = {
   // Paleta de cores - https://smart-swatch.netlify.app
-  main: "mediumseagreen",
+  //So the first step is creating a declarations file. Let's name it styled.d.ts for example.
 
   colors: {
     black: {
