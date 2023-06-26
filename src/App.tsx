@@ -1,4 +1,4 @@
-import Sidebar from './components/Sidebar';
+import Home from '../src/pages/Home'
 import Global from './assets/styles/global';
 import { ThemeProvider } from 'styled-components';
 import theme from './assets/styles/theme';
@@ -7,8 +7,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       {/* O tema vindo do assets */}
-      <div>
-        <Sidebar />
+      <div> 
+        <Home />
       </div>
       <Global />
     </ThemeProvider>
