@@ -8,7 +8,7 @@ export default createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     // https://fonts.google.com/specimen/Roboto
     // Definindo a cor dos textos
-    color: ${({ theme }) => theme.colors.blue[400]};
+    color: ${({ theme }) => theme.colors.black[50]};
   }
 
   body{
