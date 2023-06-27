@@ -35,18 +35,18 @@ export const Main = styled.main`
       gap: 24px;
 
       div {
-        color: ${(props) => props.theme.colors.blue[100]};
+        color: ${(props) => props.theme.colors.blue[400]};
       }
     }
   }
 
   .container-section {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 48px; */
 
     .header-section {
-      h1 {
+      /* h1 {
         font-weight: 700;
         font-size: 32px;
       }
@@ -54,14 +54,16 @@ export const Main = styled.main`
       small {
         font-weight: 400;
         font-size: 24px;
-      }
+      } */
     }
 
-    .container-cards {
+    /* .container-cards {
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 32px;
-    }
+    } */
   }
 `;
+
+export const UserProfileContainer = styled.section``;
