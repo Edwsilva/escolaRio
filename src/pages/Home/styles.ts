@@ -1,13 +1,13 @@
 import { styled } from 'styled-components';
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  // Entre a sidebar e o restante o gap será = 0
-  align-items: flex-start;
-`;
+// export const Container = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   // Entre a sidebar e o restante o gap será = 0
+//   align-items: flex-start;
+// `;
 
-export const Main = styled.main`
+export const ContainerHome = styled.main`
   display: flex;
   flex-direction: column;
   width: 100%;

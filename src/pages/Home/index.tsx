@@ -1,16 +1,10 @@
-import Sidebar from '../../components/Sidebar';
-import { Container, Main, UserProfileContainer } from './styles';
+import { ContainerHome, UserProfileContainer } from './styles';
 import notifications from '../../assets/icons/notification.svg';
 import CardPratice from '../../components/CardPratice';
 import { cards } from '../../mock/cards';
 import { useTheme } from 'styled-components';
-import headset from '../../assets/icons/headset.svg';
-import book from '../../assets/icons/book.svg';
-import mic from '../../assets/icons/mic.svg';
-import pencil from '../../assets/icons/pencil.svg';
 import ColumnContainer from '../../containers/ColumnContainer';
 import CardProfile from '../../components/CardProfile';
-import {Link} from 'react-router-dom'
 
 export default function Home() {
   // inport global themes
@@ -71,9 +65,7 @@ export default function Home() {
   // ];
 
   return (
-    <Container>
-      <Sidebar />
-      <Main>
+      <ContainerHome>
         <header>
           <div>
             <h1>Hello, Edwilson da Silva</h1>
@@ -130,7 +122,6 @@ export default function Home() {
           ))}
           </div>
         </ColumnContainer>
-      </Main>
-    </Container>
+      </ContainerHome>
   );
 }

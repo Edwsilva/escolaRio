@@ -3,7 +3,7 @@ import Global from './assets/styles/global';
 import { ThemeProvider } from 'styled-components';
 import theme from './assets/styles/theme';
 import { BrowserRouter } from 'react-router-dom';
-import Routes from './routes/Routes'
+import Routes from './routes/Main'
 
 function App() {
   return (
