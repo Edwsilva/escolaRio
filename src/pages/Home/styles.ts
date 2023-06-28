@@ -7,13 +7,14 @@ import { styled } from 'styled-components';
 //   align-items: flex-start;
 // `;
 
-export const ContainerHome = styled.main`
+export const ContainerCard = styled.main`
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 24px;
-  gap: 48px;
-  header {
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+ `
+ 
+  /* header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,33 +38,31 @@ export const ContainerHome = styled.main`
       div {
         color: ${(props) => props.theme.colors.blue[400]};
       }
-    }
-  }
-
-  .container-section {
-    /* display: flex;
-    flex-direction: column;
-    gap: 48px; */
-
-    .header-section {
-      /* h1 {
-        font-weight: 700;
-        font-size: 32px;
-      }
-
-      small {
-        font-weight: 400;
-        font-size: 24px;
-      } */
-    }
-
-    /* .container-cards {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 32px;
     } */
-  }
-`;
 
-export const UserProfileContainer = styled.section``;
+
+//  .container-section {
+//      display: flex;
+//     flex-direction: column;
+//     gap: 48px; 
+
+//     .header-section {
+//        h1 {
+//         font-weight: 700;
+//         font-size: 32px;
+//       }
+
+//       small {
+//         font-weight: 400;
+//         font-size: 24px;
+//       } 
+//     }
+
+//      .container-cards {
+//       display: flex;
+//       flex-direction: row;
+//       align-it ems: center;
+//       gap: 32px;
+//     } 
+//   }
+

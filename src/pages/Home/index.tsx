@@ -1,4 +1,4 @@
-import { ContainerHome, UserProfileContainer } from './styles';
+import { ContainerCard, ContainerHome, UserProfileContainer } from './styles';
 import notifications from '../../assets/icons/notification.svg';
 import CardPratice from '../../components/CardPratice';
 import { cards } from '../../mock/cards';
@@ -65,8 +65,8 @@ export default function Home() {
   // ];
 
   return (
-      <ContainerHome>
-        <header>
+      <>
+        {/* <header>
           <div>
             <h1>Hello, Edwilson da Silva</h1>
             <small>Good see you here!</small>
@@ -75,14 +75,14 @@ export default function Home() {
             <img src={notifications} alt="notifications" />
           <div>Avatar</div>
           </div>
-        </header>
+        </header> */}
 
         <ColumnContainer title="Knowledge base" description="Practice your knowledge base.">
           {/* <div className="header-section">
             <h1>Knowledge base</h1>
             <small>Practice your knowledge base.</small>
           </div> */}
-          <div className="container-cards">
+          <ContainerCard>
             {cards.map((card) => (
               <CardPratice
                 key={card.title}
@@ -93,7 +93,7 @@ export default function Home() {
               />
             ))}
             {/* <CardPratice title="Listening" /> */}
-          </div>
+          </ContainerCard>
         </ColumnContainer>
 
         {/* <UserProfileContainer>
@@ -122,6 +122,6 @@ export default function Home() {
           ))}
           </div>
         </ColumnContainer>
-      </ContainerHome>
+      </>
   );
 }

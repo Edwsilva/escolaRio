@@ -6,21 +6,25 @@ import Gramar from "../../pages/Gramar";
 import Pronunciation from "../../pages/Pronunciation";
 import PageNotFound from "../../pages/PageNotFound";
 import Sidebar from "../../components/Sidebar";
-import { ContainerMain } from "./style"; 
+import { ContainerMain, ContentMain } from "./style"; 
+import Header from "../../components/Header";
 
 export default function Main() {
 
     return (
         <ContainerMain>
             <Sidebar />
-            <RouterDOM>
-                <Route path="/" element={<Home />} />
-                <Route path="/listening" element={<Listening />} />
-                <Route path="/dictionary" element={<Dictionary />} />
-                <Route path="/gramar" element={<Gramar />} />
-                <Route path="/pronunciatio" element={<Pronunciation />} />
-                <Route path="*" element={<PageNotFound />} />
-            </RouterDOM>
+            <ContentMain>
+                <Header />
+                <RouterDOM>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/listening" element={<Listening />} />
+                    <Route path="/dictionary" element={<Dictionary />} />
+                    <Route path="/gramar" element={<Gramar />} />
+                    <Route path="/pronunciatio" element={<Pronunciation />} />
+                    <Route path="*" element={<PageNotFound />} />
+                </RouterDOM>
+            </ContentMain>
         </ContainerMain>
     )
 }

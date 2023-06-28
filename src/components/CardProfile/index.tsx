@@ -1,6 +1,5 @@
 import headset from '../../assets/icons/headset.svg';
 import { ContainerCardProfile } from './style';
-import ArrowIcon from '../Sidebar/icons/ArrowIcon';
 
 interface CardProfileProps {
   title: string,
@@ -15,12 +14,10 @@ export default function CardProfile(props: CardProfileProps) {
   const {title, icon, color, percent, description} = props
 
   return (
-    <ContainerCardProfile background="black">
+    <ContainerCardProfile background={color}>
       <div className="container-image">
         {/* <img src={headset} alt="headset" /> */}
         <img src={icon} alt={title} />
-        <ArrowIcon color={color} />
-        {/* <img src={icon} alt={title} /> */}
       </div>
     
       <small>{percent}%</small>

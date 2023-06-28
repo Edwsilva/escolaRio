@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 285px;
+  width: 185px;
   height: 80px;
   //background-color: red;
 
@@ -12,7 +12,7 @@ export const Container = styled.div`
   gap: 8px;
 
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-  //border-radius: 8px;
+  border-radius: 8px;
   //como a cor é um hexadecimal eu posso passa opacidade:
   //ex: #395bfc20
   background: ${(props) => props.color}20;

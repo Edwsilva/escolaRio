@@ -8,9 +8,8 @@ export const ContainerCardProfile = styled.div<{background: string}>`
   padding: 16px;
 
   width: 170px;
-
- // background-color: ${({ theme }) => theme.colors.black[900]};
-  background-color: ${(props) => props.background};
+  
+  background-color: ${({ theme }) => theme.colors.black[900]};
   border-radius: 16px;
 
   small {
