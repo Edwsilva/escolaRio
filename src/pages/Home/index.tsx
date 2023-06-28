@@ -10,6 +10,7 @@ import mic from '../../assets/icons/mic.svg';
 import pencil from '../../assets/icons/pencil.svg';
 import ColumnContainer from '../../containers/ColumnContainer';
 import CardProfile from '../../components/CardProfile';
+import {Link} from 'react-router-dom'
 
 export default function Home() {
   // inport global themes
@@ -78,9 +79,9 @@ export default function Home() {
             <h1>Hello, Edwilson da Silva</h1>
             <small>Good see you here!</small>
           </div>
-          <div className="container-user-info">
+          <div className="container-user-info">    
             <img src={notifications} alt="notifications" />
-            <div>Avatar</div>
+          <div>Avatar</div>
           </div>
         </header>
 
@@ -96,6 +97,7 @@ export default function Home() {
                 title={card.title}
                 icon={card.icon}
                 color={card.color}
+                path={card.path}
               />
             ))}
             {/* <CardPratice title="Listening" /> */}

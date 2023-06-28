@@ -17,6 +17,7 @@ export default createGlobalStyle`
    // color: ${({ theme }) => theme.colors.black[50]}
   }
 
+  // clear line tag a(href link)
   a {
     text-decoration: none;
   }

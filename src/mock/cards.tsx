@@ -14,6 +14,7 @@ interface Cards {
   //icon: ReactNode;
   //icon: book, agora é uma string
   icon: string;
+  path: string;
 }
 
 export const cards: Cards[] = [
@@ -23,6 +24,7 @@ export const cards: Cards[] = [
     percent: 15,
     description: 'Speak 10 minutes',
     icon: headset,
+    path: '/listening',
   },
   {
     title: 'Dictionary',
@@ -30,6 +32,7 @@ export const cards: Cards[] = [
     color: theme.colors.red[300],
     percent: 15,
     description: 'Speak 10 minutes',
+    path: '/dictionary',
   },
   {
     title: 'Gramar',
@@ -37,6 +40,7 @@ export const cards: Cards[] = [
     color: theme.colors.green[400],
     percent: 9,
     description: 'Learn 5 rules',
+    path: '/gramar',
   },
   {
     title: 'Pronunciation',
@@ -44,5 +48,6 @@ export const cards: Cards[] = [
     color: theme.colors.orange[400],
     percent: 90,
     description: 'Read 10 minutes',
+    path: '/pronunciation',
   },
 ];
