@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContainerCardProfile = styled.div`
+export const ContainerCardProfile = styled.div<{background: string}>`
   display: flex;
   flex-direction: column;
 
@@ -9,7 +9,8 @@ export const ContainerCardProfile = styled.div`
 
   width: 170px;
 
-  background-color: ${({ theme }) => theme.colors.black[900]};
+ // background-color: ${({ theme }) => theme.colors.black[900]};
+  background-color: ${(props) => props.background};
   border-radius: 16px;
 
   small {
@@ -30,6 +31,7 @@ export const ContainerCardProfile = styled.div`
 
     border-radius: 8px;
     //theme.colors.blue[400]}20 o 20 é a opacidade da cor
-    background-color: ${({ theme }) => theme.colors.blue[400]}20;
+    //background-color: ${({ theme }) => theme.colors.blue[400]}20;
+    background-color: ${(props) =>props.background}20;
   }
 `;

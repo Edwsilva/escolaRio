@@ -110,7 +110,23 @@ export default function Home() {
         </UserProfileContainer> */}
 
         <ColumnContainer title="User Profile" description="Follow your development.">
-          <CardProfile />
+          <div style={{display: 'flex', gap: 16}}>
+          {/* <div className="container-cards"> */}
+          
+
+          {cards.map((card) => (
+
+            <CardProfile
+            key={card.title}
+            icon={card.icon}
+            title={card.title}
+            color={card.color}
+            percent={card.percent}
+            description={card.description}
+            />
+            
+          ))}
+          </div>
         </ColumnContainer>
       </Main>
     </Container>

@@ -4,7 +4,7 @@ export const Container = styled.aside`
   // background: ${(props) => props.theme.main};
   //background: ${(props) => props.theme.colors.purple[700]} antes de tipar
   // A tipagem está relacionada com o arquivo styled.d.ts
-  background: ${(props) => props.theme.colors.black[900]};
+  background: ${({theme}) => theme.colors.black[900]};
 
   width: 80px;
   height: 100vh;
